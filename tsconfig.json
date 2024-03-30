@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "node16",
+    "lib": ["ES2023"],
+    "types": ["cypress", "node"]
+  },
+  "include": ["**/*.ts"]
+}
