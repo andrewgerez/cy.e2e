@@ -1,5 +1,7 @@
+import { env } from "../env"
+
 describe('init spec', () => {
   it('passes', () => {
-    cy.visit('https://nestjs.com')
+    cy.visit(env.E2E_ENVIRONMENT_URL)
   })
 })
