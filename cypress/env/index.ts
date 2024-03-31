@@ -1,7 +1,8 @@
 import z from 'zod'
 
 const envSchema = z.object({
-  E2E_ENVIRONMENT_URL: z.string(),
+  E2E_ENVIRONMENT_URL: z.string().url(),
+  E2E_AUTH_ROUTE: z.string(),
 })
 
 const _env = envSchema.safeParse(Cypress.env())
