@@ -1,8 +1,8 @@
 import { env } from '@/env'
 import { CyElementEnum, CyKeyTypeEnum } from '@/support/utils/cy-types'
 
-describe('TEST: Demonstration spec', () => {
-  it('should be able to navigate from the first page to the login page', async () => {
+describe('TEST: Demonstration', () => {
+  it('should be able to navigate from the first page to the login page', () => {
     cy.visit(env.E2E_ENVIRONMENT_URL)
 
     cy.url().should('eq', env.E2E_ENVIRONMENT_URL)
